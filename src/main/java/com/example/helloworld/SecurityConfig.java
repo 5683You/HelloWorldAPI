@@ -16,7 +16,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests((requests) -> requests
                         .anyRequest().authenticated()
                 )
-                .httpBasic(withDefaults()); // 使用新的配置方式
+                .httpBasic(withDefaults()); 
         return http.build();
     }
 }
